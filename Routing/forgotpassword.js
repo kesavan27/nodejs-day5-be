@@ -17,7 +17,7 @@ forgotRouter.post("/", async (req, res) => {
             transport.sendMail({
                 ...mailOptions,
                 to: [req.body.email],
-                text: "Click the given link " + `https://nodejsday5fe.netlify.app/resetpassword/${str}`
+                text: "Click the given link " + `https://password-resetvk.netlify.app//resetpassword/${str}`
             })
             res.send({ message: "Success" });
         } else {
